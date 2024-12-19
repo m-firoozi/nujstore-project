@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Faeze Firoozi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nujstore project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+      <header>
+        <div class="menu" id="#top">
+            <nav>
+                <ul>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="search.html" target="_blank">محصولات</a></li>
+                    <li><a href="#">وبلاگ</a></li>
+                    <li><a href="#">پیگیری سفارش</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#"><i class="fa fa-reorder"></i></a></li>
+                    <li><a href="#" id="tablet-menu">منو</a></li>
+                    <li><a href="#" id="tablet-search"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </nav>
+
+            <img src="images/nuj-logo.png">
+
+            <div class="categories">
+                <nav>
+                    <ul>
+                        <li><a href="#">BODY</a></li>
+                        <li><a href="#">FACE</a></li>
+                        <li><a href="#">HAIR</a></li>
+                        <li><a href="#">EXTRA</a></li>
+                        <li>|</li>
+                        <li><a href="#"><i class="fa fa-user-o"></i></a></li>
+                        <li><a href="#"><i  id="heart" class="fa fa-heart-o"></i></a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i id="shopping-list"class="fa fa-shopping-cart"></i></a></li>
+                        
+                        
+                    </ul>
+                </nav>    
+            </div>
+            
+            <span id="dark-light-mode">Darkmode<input type="checkbox" id="Darkmode"></span>
+        </div>
+        
+       
+
+        <div id="shopping-cart">
+            <table id="cart-content">
+                <thead>
+                    <tr>
+                        <th>تصویر</th>
+                        <th>نام کالا</th>
+                        <th>قیمت</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <a href="#" id="clear-cart">پاک کردن</a>
+        </div>
+                <!--slider-->
+        <div class="slider-container">
+
+            <div class="slides">
+                <div class="slider-image">
+                 <img src="images/1-banner.jpg">
+                </div> 
+                <div class="slider-caption">
+                 <img src="images/1-564565.png" id="fourth-slidetext">
+                </div>
+             </div>
+
+             <div class="slides">
+                <div class="slider-image">
+                 <img src="images/slider 3 new.PNG">
+                </div> 
+                <div class="slider-caption">
+                 <img src="images/2-55555.png" id="third-slidetext">
+                </div>
+             </div>
+
+             <div class="slides">
+                <div class="slider-image">
+                 <img src="images/slider22.PNG">
+                </div> 
+                <div class="slider-caption">
+                 <img src="images/1-3333.png" id="second-slidetext">
+                </div>
+             </div>
+
+            <div class="slides">
+               <div class="slider-image">
+                <img src="images/1-IMG_9390 copy-scaled.jpg">
+               </div> 
+               <div class="slider-caption">
+                <img src="images/1-zzzz.png" id="first-slidetext">
+               </div>
+            </div>
+
+             <button class="previous" onclick="plusIndex(+1)"><i class="fa fa-angle-left"></i></button>
+             <button class="next" onclick="plusIndex(-1)"><i class="fa fa-angle-right"></i></button>
+
+             <div class="slider-bullets">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+                <span class="dots" onclick="currentSlide(4)" ></span>
+
+             </div>
+             <!-- slider -->
+        </div>
+      </header>
+      <!-- header -->
+
+        
+      <!-- Popup message -->
+      <div id="overlay1"></div>
+      <div id="namePopup">
+        <div class="popup-design">
+          <p id="popupMessage">لطفا نام خود را وارد کنید:</p>
+          <input type="text" id="userName" placeholder="نام شما">
+          <button onclick="submitName()" id="submit-btn">ذخیره</button>
+        </div>
+      </div>
+      <!-- Popup message -->
+
+
+      <!-- MAIN -->
+      <main>
+
+        <div id="brandName">
+            <h4>نـــوج لایف</h4>
+        </div>
+
+        <!-- first-section -->
+        <section class="first-banner">
+            <div class="product">
+                <img src="images/face.jpg">
+                <span>FACE</span>
+                <a class="product-count">۱۱ محصول</a>
+            </div>
+
+            <div class="product">
+                <img src="images/boody.jpg">
+                <span>BODY</span>
+                <a class="product-count">۷ محصول</a>
+            </div>
+
+            <div class="product">
+                <img src="images/hair.jpg">
+                <span>HAIR</span>
+                <a class="product-count">۵ محصول</a>
+            </div>
+
+            <div class="product">
+                <img src="images/extra.jpg">
+                <span>EXTRA</span>
+                <a class="product-count">۳ محصول</a>
+            </div>
+        </section>
+
+        <!-- second-section -->
+        <section class="second-banner">
+            <h4>جدید ترین ها</h4>
+            <span class="all-products">مشاهده همه محصولات</span>
+
+            <div id="new-products">
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product1.jpg" alt="image 1" data-hover="images/hover1.jpg">
+                        <span class="onsale">۵%-</span>
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div data-id="1" class="add-to-cart">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">توت بگ nuj club</h3>
+                    <div class="product-cat">
+                        <a>EXTRA,</a>
+                        <a> اکسسوری</a>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">۳۴۷,۰۰۰<a>تومان</a></span>
+                        <span class="onsale-price cost">۳۲۹,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product2.jpeg" alt="image 2" data-hover="images/product2.jpeg">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="2">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3  class="product-title">سرم کف سر رزماری </h3>
+                    <div class="product-cat">
+                        <a>Hair,</a>
+                        <a> بدون دسته‌بندی</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۲۸۹,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/lipgloss1.jpeg" alt="image 3" data-hover="images/hover3.jpeg">
+                        <span class="onsale">۵%-</span>
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="3">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">lip oil MELON KISS ( روغن لب )</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">۱۹۸,۰۰۰تومان</span>
+                        <span class="onsale-price cost">۱۸۸,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/lipgloss2.jpg" alt="image 4" data-hover="images/hover4.jpg">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="4">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">lip oil BLAZE (روغن لب )</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۱۹۸,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/lipgloss3.jpeg" alt="image 5" data-hover="images/hover5.jpg">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="5">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">lip oil rebel ( روغن لب )</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۱۹۸,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/kesh1.PNG" alt="image 6" data-hover="images/kesh1.PNG">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="6">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">اسکینی اسکرانچی</h3>
+                    <div class="product-cat">
+                        <a>اکسسوری,</a>
+                        <a>Hair</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۷۶,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- third-section -->
+
+        <section class="third-banner">
+            <div class="background-image">
+                <img src="images/banner34-1536x720.jpg">
+            </div>
+        </section>
+
+        <!-- fourth-section -->
+        <section class="fourth-banner">
+            <h4>پرفروش ترین ها</h4>
+            <span class="all-products">مشاهده همه محصولات</span>
+
+            <div id="top-sellers">
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product7.jpeg" data-hover="images/product7-hover1.jpeg">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="7">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">بالم لب استیکی نوج</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۱۰۹,۰۰۰تومان _ ۱۱۹,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product8.jpg" data-hover="images/product8-hover.jpeg">
+                        <span class="onsale">۹%-</span>
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="8">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">تينت لب و گونه نوج</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">۲۴۹,۰۰۰تومان</span>
+                        <span class="onsale-price cost">۲۲۶,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product9.jpg" data-hover="images/product9-hover.jpg">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="9">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">میست آبرسان لوندر</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۱۸۶,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product10.jpeg" data-hover="images/product10-hover1.jpg">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="10">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">اسکراب لب تمشک</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۱۲۵,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product11.jpg" data-hover="images/product11-h.jpeg">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="11">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">میست آبرسان رز</h3>
+                    <div class="product-cat">
+                        <a>Face</a>
+                    </div>
+                    <div class="price">
+                        <span class="cost">۱۷۶,۰۰۰تومان</span>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-img">
+                        <img src="images/product12.jpeg" data-hover="images/product12-hover.jpg">
+                        <span class="onsale">۵%-</span>
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                            <div class="add-to-cart" data-id="12">افزودن به سبد خرید</div>
+                        </div>
+                    </div>
+                    <h3 class="product-title">کره بدن نوج</h3>
+                    <div class="product-cat">
+                        <a>Body</a>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">۲۵۹,۰۰۰تومان</span>
+                        <span class="onsale-price cost">۲۴۶,۰۰۰تومان</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fifth-section -->
+
+        <section class="questions-container">
+            <p id="all-questions">سوالات متداول</p>
+            <div class="common-questions">
+                <p>چطور از فروشگاه خرید کنم؟</p>
+                <span class="change-icon">+</span>
+            </div>
+            <div class="answers">بعد از انتخاب ، کالاهای مدنظر خود را به سبد خرید اضافه کنید .در انتها وارد حساب کاربری خود شوید و از بالای صفحه سمت چپ گزینه سبد خرید را زده و حالا پرداخت نمایید.</div>
+            
+            <div class="common-questions">
+                <p>میتوانم سفارش خود را در محل پرداخت کنم؟</p>
+                <span class="change-icon">+</span>
+            </div>
+            <div class="answers">خیر ، پرداخت فقط از سایت نوج استور صورت می گیرد .</div>
+
+            <div class="common-questions">
+                <p>چطور میتوانم سفارشم را تحویل بگیرم ؟</p>
+                <span class="change-icon">+</span>
+            </div>
+            <div class="answers">پیک : اگر شما در یکی از شهرهای مازندران هستید ، سفارش شما با پیک های  نوج استور تحویل شما میشود.<br>
+            پست: در صورتی که آدرس شما در محدوده نوج استور نیست ، سفارش شما با پست پیشتاز و توسط تیپاکس تحویل شما میشود.</div>
+
+            <div class="common-questions">
+                <p>بعد از اینکه سفارشم ثبت نهایی شد ، چه زمانی میتوانم آن را تحویل بگیرم؟</p>
+                <span class="change-icon">+</span>
+            </div>
+            <div class="answers">در صورتی که دریکی از شهرهای پیک هستید ، یک یا دو روز بعد خرید و در غیر اینصورت سفارش شما از طریق پست و تیپاکس و باربری طی 4 روز کاری تحویل شما میشود.</div>
+
+            <div class="common-questions">
+                <p>سفارشم را بصورت اینترنتی پرداخت نمودم ، وجه از حسابم کسر شده اما پرداخت سفارشم تایید نشده است؟</p>
+                <span class="change-icon">+</span>
+            </div>
+            <div class="answers">ممکن است بدلیل اختلال در درگاه بانکی انتقال وجه به بانک ناقص باشد – در اینصورت وجه بصورت خودکار طی 72 ساعت کاری مجدد بحساب شما برمیگردد.تاکید می شود، در این مورد نیازی به تماس با پشتیبانی ندارید.</div>
+
+        </section>
+
+        <!-- sixth-section -->
+
+        <section class="delivery-container">
+            <div>
+                <img src="images/delivery60.webp">
+                <p>ارسال سریع</p>
+            </div>
+            <div>
+                <img src="images/return60.webp">
+                <p>۷روز ضمانت بازگشت کالا</p>
+            </div>
+            <div>
+                <img src="images/guarantee60.webp">
+                <p>ضمانت اصالت کالا</p>
+            </div>
+        </section>
+      </main>
+      <!-- MAIN -->
+
+      <!-- FOOTER -->
+
+      <footer>
+        <aside class="website-info">
+            <div class="info-1">
+                <img src="images/nuj-footer.png">
+                <ul>
+                    <li><a href="#">مازندران، بابل، خیابان شریعتی</a></li>
+                    <li><a href="#">
+                        تلفن: 32364799 011
+                        </a></li>
+                    <li><a href="#">
+                        ایمیل: info@nujstore.com
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="info-2">
+                <h5>دسته‌های محصولات</h5>
+                <p>Body</p>
+                <p>EXTRA</p>
+                <p>Face</p>
+                <p>Hair</p>
+                <p>بدون دسته‌بندی</p>
+            </div>
+
+            <div class="info-3">
+                <h5>دسترسی سریع</h5>
+                <ul>
+                    <li><a href="#" id="main-page">صفحه اصلی</a></li>
+                    <li><a href="#">نقد و بررسی</a></li>
+                    <li><a href="#">وبلاگ</a></li>
+                    <li><a href="#">پیگیری سفارش</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+
+            <div class="info-4">
+                <h5>نماد اعتماد الکترونیک</h5>
+                <img src="images/electronic.png">
+            </div>
+        </aside>
+        <div class="webdesigner-info">
+        <p>کلیه حقوق مادی و معنوی این سایت متعلق به شرکت آنیتا پردازش نگین شمال می باشد-<span>طراحی سایت</span> توسط <span> آراز سیستم</span></p>
+        </div>
+        <a href="#top" id="up-button"><i class="fa fa-angle-up"></i></a>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

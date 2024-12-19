@@ -1,0 +1,81 @@
+[
+    {
+        "productname": "توت بگ nuj club",
+        "category": " -  اکسسوری  -",
+        "price": "۳۲۹,۰۰۰تومان",
+        "image":"images/product1.jpg"
+    
+    },
+    {
+        "productname": "سرم کف سر رزماری",
+        "category": " -  مو  - ",
+        "price": "۲۸۹,۰۰۰تومان",
+        "image":"images/product2.jpeg"
+    },
+    {
+        "productname": "lip oil MELON KISS ( روغن لب )",
+        "category": " -  صورت  - ",
+        "price": "۱۸۸,۰۰۰تومان",
+        "image":"images/lipgloss1.jpeg"
+    },
+    {
+        "productname": "lip oil BLAZE (روغن لب )",
+        "category": " -  صورت  - ",
+        "price": "۱۹۸,۰۰۰تومان",
+        "image":"images/lipgloss2.jpg"
+    },
+    {
+        "productname": "lip oil rebel ( روغن لب )",
+        "category": " -  صورت  - ",
+        "price": "۱۹۸,۰۰۰تومان",
+        "image":"images/lipgloss3.jpeg"
+    },
+    {
+        "productname": "اسکینی اسکرانچی",
+        "category": " -  اکسسوری  - ",
+        "price": "۷۶,۰۰۰تومان",
+        "image":"images/kesh1.PNG"
+    }
+    ,
+    {
+        "productname": "بالم لب استیکی نوج",
+        "category": " -  صورت  - ",
+        "price": "۱۰۹,۰۰۰تومان _ ۱۱۹,۰۰۰تومان",
+        "image":"images/product7.jpeg"
+    }
+    ,
+    {
+        "productname":"تينت لب و گونه نوج",
+        "category":" -  صورت  - ",
+        "price":"۲۲۶,۰۰۰تومان",
+        "image":"images/product8.jpg"
+    }
+    ,
+    {
+        "productname":"میست آبرسان لوندر",
+        "category":" -  صورت  -",
+        "price":"۱۸۶,۰۰۰تومان",
+        "image":"images/product9.jpg"
+    }
+    ,
+    {
+        "productname":"اسکراب لب تمشک",
+        "category":" -  صورت  - ",
+        "price":"۱۲۵,۰۰۰تومان",
+        "image":"images/product10.jpeg"
+    }
+    ,
+    {
+        "productname":"میست آبرسان رز",
+        "category":" -  صورت  - ",
+        "price":"۱۷۶,۰۰۰تومان",
+        "image":"images/product11.jpg"
+    }
+    ,
+    {
+        "productname":"کره بدن نوج",
+        "category":" -  بدن  - ",
+        "price":" ۲۴۶,۰۰۰تومان",
+        "image":"images/product12.jpeg"
+    }
+]
